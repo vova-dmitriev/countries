@@ -4,11 +4,9 @@ import { Card, BackButton } from "@/shared/ui";
 
 import { notFound } from "next/navigation";
 
-interface Props {
-  params: { code: string };
-}
+type Params = Promise<{ code: string }>;
 
-export default async function CountryPage({ params }: Props) {
+export default async function CountryPage({ params }: { params: Params }) {
   const countries = await getCountries();
   const { code } = await params;
   const country = countries.find((c) => c.iso_code2 === code.toUpperCase());
