@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Исследователь стран
+Это приложение позволяет вам исследовать страны мира, просматривать их детали и переключаться между светлой и темной темой.
 
-## Getting Started
+# Демо
+Доступно по ссылке [https://countries-y4lx.vercel.app/](https://countries-y4lx.vercel.app/)
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Возможности
+-   **Просмотр всех стран**: Просматривайте полный список стран на главной странице.
+-   **Детали страны**: Нажмите на страну, чтобы просмотреть более подробную информацию.
+-   **Смена тем**: Легко переключайтесь между светлым и темным режимами для удобного просмотра.
+-   **Прокрутка вверх**: Удобная кнопка для быстрого возврата в верхнюю часть страницы.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Структура проекта
+Этот проект использует методологию Feature-Sliced Design (FSD) для организации кодовой базы. Этот подход помогает поддерживать чистую, масштабируемую и модульную архитектуру.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Используемые технологии
+- **Next.js**: Фреймворк React для production-ready приложений
+- **TypeScript**: Типизированный JavaScript для более надежного кода
+- **Tailwind CSS**: Утилитарный CSS-фреймворк для стилизации
+- **Framer Motion**: Библиотека для создания анимаций
+- **Lucide Icons**: Набор простых и красивых иконок
+- **Feature-Sliced Design**: Методология для организации кодовой базы, которая разделяет код на слои (shared, entities, features, widgets, pages и т.д.) для лучшей масштабируемости и поддерживаемости
